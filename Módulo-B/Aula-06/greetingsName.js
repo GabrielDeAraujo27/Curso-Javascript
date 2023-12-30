@@ -3,6 +3,6 @@ function ex002() {
     if (nome == null){
         alert('Encerrado.')
     } else {
-        alert('Ola, ' + nome + '!')
+        alert(`Olá, ${nome}!`)
     }
 }

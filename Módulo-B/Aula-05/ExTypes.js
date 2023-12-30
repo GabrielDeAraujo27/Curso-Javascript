@@ -5,7 +5,7 @@ function ex001() {
 
     var answer = 5.8
     type = (typeof answer)
-    alert(type + ': ' + answer)
+    alert(type + ': ' + answer.toFixed(2))
 
     var answer = 'Letras'
     type = (typeof answer)
