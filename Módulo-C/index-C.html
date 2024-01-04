@@ -32,8 +32,14 @@
     <div class="exer" id="ex02">
 
     </div>
-    <div id="ex03" onclick="ex004()" onmouseenter="ex003()" onmouseout="ex005()">
-        <h2 id="ex04">Clique aqui!</h2>
+    <div id="ex03">
+        <h2>Clique aqui!</h2>
     </div>
+    <script>
+        var bott = window.document.getElementById('ex03')
+        bott.addEventListener('mouseenter', entrar)
+        bott.addEventListener('click', clicar)
+        bott.addEventListener('mouseout', sair)
+    </script>
 </body>
 </html>
