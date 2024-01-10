@@ -2,7 +2,8 @@ function ex003() {
     var data = new Date()
     var ano = data.getFullYear()
     var pidade = document.getElementById("iano")
-    var idade = ano - pidade.value
+    var anoNasc = pidade.value
+    var idade = ano - anoNasc.value
     var fsex = document.getElementsByName("sexo")
     var genero = "nmk"
     var res = document.getElementById("defi")
@@ -24,7 +25,13 @@ function ex003() {
         } else {
             pessoa = "Idosa"
         }
+    } else {
+        alert("Houve um erro, prencha os campos corretamente")
+        pessoa = "Não binario"
     }
-    pessoa = pessoa.toLowerCase()
+    if (anoNasc > ano) {
+        alert("Houve um erro, prencha os campos corretamente")
+        pessoa = "erro"
+    }
     res.innerText = `Tu és um(a) ${pessoa}`
 }
